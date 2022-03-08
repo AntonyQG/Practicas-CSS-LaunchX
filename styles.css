@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; */
+}
+
+body {
+  font-family: "Hubballi", cursive;
+  font-family: "Poppins", sans-serif;
+}
+
+/* -------------------- HEADER -------------------- */
+header {
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center 0;
+  /* background-repeat: no-repeat;
+  background-position: 50% 50%; */
+}
+
+header .container {
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: white;
+  opacity: 0.75;
+}
+
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 15px;
+  align-items: baseline;
+}
+
+/* Elements */
+.navbar .logo {
+  color: blue;
+}
+
+.menu a {
+  color: grey;
+  text-decoration: none;
+  margin-left: 30px;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+  color: black;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.menu button {
+  /* background-color: rgb(0, 0, 210); */
+  background-color: rgb(0, 0, 210);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* -------------------- BANNER -------------------- */
+.text-principal {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+}
+
+.banner-right {
+  background-image: url(./assets/banner.jpg);
+  background-size: cover;
+  height: 100%;
+  position: relative;
+  /* top: -50px; */
+}
+
+.banner-left {
+  margin: 150px;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.banner-left .principal-title {
+  color: darkblue;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.banner-left h4 {
+  color: grey;
+  font-size: 17px;
+}
+
+.banner-left .subtitles {
+  display: flex;
+  align-items: baseline;
+  color: darkblue;
+}
+
+.banner-left p {
+  padding-left: 12px;
+}
+
+.banner-left img {
+  width: 20px;
+}
+
+.banner-left .icon-star {
+  padding-left: 40px;
+}
