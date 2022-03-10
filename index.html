@@ -15,6 +15,7 @@
     <title>Vaccination</title>
   </head>
   <body>
+    <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
     <header>
       <div class="container">
         <nav class="navbar">
@@ -27,7 +28,7 @@
             <a href="#" id="btn-menu">Education</a>
             <a href="#" id="btn-galeria">News</a>
             <a href="#" id="btn-ubicacion">Regulation</a>
-            <a href="#"><button>Hoax Buster</button></a>
+            <a href="#"><button class="button-primary">Hoax Buster</button></a>
           </div>
         </nav>
 
@@ -51,10 +52,44 @@
               />
               <p>Selected Vaccines</p>
             </div>
+            <br />
+            <br />
+            <br />
+            <!-- Sección Schedule -->
+            <div class="schedule-section">
+              <div class="schedule-title">
+                <img src="./assets/shield.png" alt="protection icon" />
+                <p>Schedule Vaccinations</p>
+              </div>
+              <article>
+                <div class="schedule-bar">
+                  <!-- <img src="./assets/shield.png" alt="protection icon" /> -->
+                  <lord-icon
+                    src="https://cdn.lordicon.com/zzcjjxew.json"
+                    trigger="loop"
+                    colors="primary:#1b1091,secondary:#1b1091"
+                    style="width: 20px; height: 20px"
+                  >
+                  </lord-icon>
+                  <p>Location</p>
+                  <img
+                    src="./assets/star.png"
+                    alt="protection icon"
+                    class="icon-star"
+                  />
+                  <p>Date</p>
+                  <img src="./assets/shield.png" alt="protection icon" />
+                  <p>Vaccine Type</p>
+                  <button class="button-primary">Submit</button>
+                </div>
+              </article>
+            </div>
           </div>
           <div class="banner-right"></div>
         </div>
       </div>
     </header>
+    <!-- Sección Logos Farmacéuticas -->
+    <div class="bar-logos"></div>
   </body>
 </html>
