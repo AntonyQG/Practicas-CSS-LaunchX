@@ -62,7 +62,7 @@ header .container {
 }
 
 .button-primary {
-  /* background-color: rgb(0, 0, 210); */
+  /* background-color: rgba(41,73,199,255); */
   background-color: rgb(0, 0, 210);
   border: none;
   color: white;
@@ -166,7 +166,7 @@ header .container {
   padding-left: 40px;
 }
 
-.schedule-section article {
+/* .schedule-section article {
   background: #fff;
   padding: 40px;
   width: 100%;
@@ -178,6 +178,22 @@ header .container {
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35);
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35);
   opacity: 0.95;
+} */
+
+.schedule-section article {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(5px);
+  padding: 1rem;
+  border-radius: 5px;
+  border: 5px solid var(--white);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+  z-index: 1;
 }
 
 /* -------------------- LOGOS BAR SECTION -------------------- */
@@ -188,4 +204,248 @@ header .container {
   position: relative;
   background-position: center;
   margin: 50px;
+}
+
+/* -------------------- QUESTION SECTION -------------------- */
+.why-should {
+  margin-right: 150px;
+  margin-left: 150px;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+.why-should .principal-title {
+  color: darkblue;
+  font-size: 60px;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.why-should h4 {
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  color: grey;
+  font-size: 17px;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* -------------------- CARD SECTION -------------------- */
+.card-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-right: 150px;
+  margin-left: 150px;
+  margin: 0 150px 100px 150px;
+}
+
+.card {
+  margin: 20px;
+  padding: 20px;
+  height: 300px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: 0.1s ease-in-out;
+  cursor: default;
+}
+
+.card:hover {
+  box-shadow: 0 10px 25px rgba(149, 184, 255, 0.3);
+}
+
+.card-img img {
+  width: 30px;
+}
+
+.card-title h1 {
+  color: darkblue;
+  font-size: 23px;
+}
+
+.card-txt {
+  color: grey;
+  font-size: 17px;
+}
+
+/* -------------------- DROP LIST SECTION -------------------- */
+.preparation {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.preparation .preparation-left {
+  background-image: url(./assets/woman-pic.jpg);
+  background-size: cover;
+  height: 100%;
+  position: relative;
+  background-position: center;
+}
+
+.preparation .preparation-right {
+  margin: 30px 150px;
+  text-align: left;
+}
+
+.preparation-title h1 {
+  color: darkblue;
+  font-size: 60px;
+}
+
+.preparation-text p {
+  color: grey;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+/* List Items */
+.list-item {
+  max-width: 500px;
+  margin: 2rem 0;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.09);
+}
+
+.list-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.list-button i {
+  box-shadow: 0 10px 25px rgba(149, 184, 255, 0.3);
+  font-size: 1rem;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin: 1rem;
+  background-color: #fcf5d6;
+  color: #ebc427;
+}
+
+.list-item-title {
+  display: flex;
+  align-items: center;
+}
+
+.list-item-title img {
+  width: 30px;
+  margin: 15px;
+}
+
+.list-item-title h3 {
+  font-family: var(--poppins);
+  font-weight: 600;
+  font-size: 1rem;
+  /* color: var(--very-dark-blue); */
+  color: darkblue;
+  margin: 0;
+}
+
+.fa-solid {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+
+.list-item .list-content {
+  visibility: hidden;
+  overflow: hidden;
+  opacity: 0;
+  height: 0;
+}
+
+.active .list-content {
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+}
+
+.active {
+  box-shadow: 0 10px 25px rgba(149, 184, 255, 0.3);
+}
+
+.active .list-button .list-open {
+  transform: rotate(180deg);
+}
+
+.active .list-button i {
+  box-shadow: 0 10px 25px rgba(149, 184, 255, 0.3);
+  font-size: 1rem;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin: 1rem;
+  /* background-color: #e9f1fe;
+  color: #2c4cca; */
+  background-color: #fcf5d6;
+  color: #ebc427;
+}
+
+.list-content p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 25px;
+  padding: 1rem 4rem;
+  padding-bottom: 2rem;
+  color: grey;
+}
+
+/* -------------------- FOOTER SECTION -------------------- */
+footer {
+  background-color: #eef3ff;
+}
+
+footer p {
+  color: grey;
+}
+
+.top-footer {
+  padding: 70px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.vaccination-title h1 {
+  color: blue;
+}
+
+.vaccination-title p {
+  box-sizing: content-box;
+  width: 42%;
+  margin: 10px;
+}
+
+.r-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 120px;
+  width: 500px;
+}
+
+.r-footer h1 {
+  color: darkblue;
+}
+
+.r-footer p {
+  margin: 15px;
+}
+
+.bottom-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 150px;
+  margin-left: 150px;
+}
+
+.bottom-footer p {
+  margin-bottom: 20px;
+}
+
+.bottom-right-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
 }
